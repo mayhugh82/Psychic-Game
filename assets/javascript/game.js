@@ -21,15 +21,14 @@
 
 
 
- 
+
 
  // Create variables that hold references to the places in the HTML where we want to display things.
  var directionsText = document.getElementById("directions-text");
- var userChoiceText = document.getElementById("userchoice-text");
- var computerChoiceText = document.getElementById("computerchoice-text");
  var winsText = document.getElementById("wins-text");
  var lossesText = document.getElementById("losses-text");
- var tiesText = document.getElementById("ties-text");
+ var guessesLeftText = document.getElementById("guessesLeft-text");
+ var guessesSoFarText = document.getElementById ("guessesSoFar-text");
 
  // This function is run whenever the user presses a key.
  document.onkeyup = function(event) {
