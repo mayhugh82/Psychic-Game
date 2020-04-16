@@ -18,7 +18,7 @@
  var wins = 0;
  var losses = 0;
  var guessesLeft = 10;
- var guessesSoFar = 0;
+ var guessesSoFar = [];
  var gameElement = document.getElementById('game');
 
  // Create variables that hold references to the places in the HTML where we want to display things.
@@ -37,18 +37,18 @@
    // Randomly chooses a choice from the options array. This is the Computer's guess.
    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-   // Reworked our code from last step to use "else if" instead of lots of if statements.
+   
 
-   // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
+   // This logic determines the outcome of the game (win/loss/guesses left/ guesses so far), and increments the appropriate number
    if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
 
-     if ((userGuess === "r" && computerGuess === "s") ||
-       (userGuess === "s" && computerGuess === "p") ||
-       (userGuess === "p" && computerGuess === "r")) {
+     if (userGuess === computerGuess) {
        wins++;
-     } else if (userGuess === computerGuess) {
-       ties++;
-     } else {
+       
+     } else if (userGuess !== computerGuess) {
+       guessesLeft --;
+
+     } else (guessesLeft === 0) {
        losses++;
      }
 
