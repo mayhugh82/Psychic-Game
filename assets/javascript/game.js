@@ -37,7 +37,10 @@
    // Randomly chooses a choice from the options array. This is the Computer's guess.
    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-   
+   //this function resest the game 
+   function reset() {
+     
+   }
 
    // This logic determines the outcome of the game (win/loss/guesses left/ guesses so far), and increments the appropriate number
    if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
