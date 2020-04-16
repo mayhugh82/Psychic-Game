@@ -12,16 +12,14 @@
  // Creates an array that lists out all of the options (upper and lowercase letters).
  var computerChoices = ["a", "b", "c","d", "e", "f","g", "h", "i","j", "k", "l","m", "n", "o","p", "q", "r","s", "t", "u","v", "w", "x","y", "z","A", "B", "C","D", "E", "F","G", "H", "I","J", "K", "L","M", "N", "O","P", "Q", "R","S", "T", "U","V", "W", "X","Y", "Z"];
 
- // Creating variables to hold the number of wins, losses, and ties. They start at 0.
+ 
+
+ // Creating variables to hold the number of wins, losses, guesses left and guesses so far. They start at 0.
  var wins = 0;
  var losses = 0;
- var guessesLeft = 0;
+ var guessesLeft = 10;
  var guessesSoFar = 0;
  var gameElement = document.getElementById('game');
-
-
-
-
 
  // Create variables that hold references to the places in the HTML where we want to display things.
  var directionsText = document.getElementById("directions-text");
@@ -45,7 +43,7 @@
    if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
 
      if ((userGuess === "r" && computerGuess === "s") ||
-       (userGuess === "s" && computerGuess === "p") || 
+       (userGuess === "s" && computerGuess === "p") ||
        (userGuess === "p" && computerGuess === "r")) {
        wins++;
      } else if (userGuess === computerGuess) {
