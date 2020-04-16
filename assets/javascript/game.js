@@ -55,12 +55,11 @@
      // Hide the directions
      directionsText.textContent = "";
 
-     // Display the user and computer guesses, and wins/losses/ties.
-     userChoiceText.textContent = "You chose: " + userGuess;
-     computerChoiceText.textContent = "The computer chose: " + computerGuess;
-     winsText.textContent = "wins: " + wins;
-     lossesText.textContent = "losses: " + losses;
-     tiesText.textContent = "ties: " + ties;
+     // Display the user and computer guesses, and wins/losses/
+     winsText.textContent = wins;
+     lossesText.textContent = losses;
+     guessesLeftText.textContent = guessesLeft;
+     guessesSoFarText.textContent = guessesSoFar.join;
    }
  };
 </script>
