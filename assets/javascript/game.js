@@ -91,7 +91,8 @@ document.onkeyup = function (event) {
 
   //this function resest the game
   function reset() {
-    computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    computerGuess =
+      computerChoices[Math.floor(Math.random() * computerChoices.length)];
     guessesSoFar = [];
     guessesLeft = 10;
   }
