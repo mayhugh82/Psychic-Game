@@ -96,7 +96,18 @@ document.onkeyup = function (event) {
     guessesLeft = 10;
   }
 
-  
+  // This logic determines the outcome of the game (win/loss/guesses left/ guesses so far), and increments the appropriate number
+  if (userGuess === computerGuess) {
+    wins++;
+    reset();
+  } else {
+    guessesSoFar.push(userGuess);
+    if (guessesLeft === 0) {
+      losses++;
+      reset();
+    } else {
+      guessesLeft--;
+    }
   }
 
   // Hide the directions
