@@ -1,4 +1,4 @@
-# Word-Guess-Game
+# Psychic-Game
 
 This is a game made from JavaScript
 
@@ -23,4 +23,4 @@ The object of the game is to guess what upper case or lower case letter the comp
 
 ## Authors
 
-* **Diana Mayhugh** - *Initial work* - [BasicPortfolio](https://mayhugh82.github.io/Word-Guess-Game/)
+* **Diana Mayhugh** - *Initial work* - [Psychic](https://mayhugh82.github.io/Word-Guess-Game/)
